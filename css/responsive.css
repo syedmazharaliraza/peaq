@@ -1,0 +1,682 @@
+/* ========================================
+   RESPONSIVE.CSS - Media Queries for All Breakpoints
+   ======================================== */
+
+/* ========================================
+   LARGE DESKTOP (1440px and above)
+   ======================================== */
+@media (min-width: 1440px) {
+    .hero__title {
+        font-size: 120px;
+    }
+}
+
+/* ========================================
+   TABLET LANDSCAPE (1024px and below)
+   ======================================== */
+@media (max-width: 1024px) {
+    /* Typography Adjustments */
+    :root {
+        --font-size-h1: 80px;
+        --font-size-h2: 48px;
+        --font-size-h3: 26px;
+        --font-size-h4: 22px;
+        --font-size-body: 17px;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    /* Team Grid - 2 columns, reset mosaic */
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 320px;
+        gap: var(--spacing-md);
+    }
+
+    .team-card:nth-child(1),
+    .team-card:nth-child(2),
+    .team-card:nth-child(3),
+    .team-card:nth-child(4),
+    .team-card:nth-child(5) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    /* Services Grid - 2 columns */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .service-card {
+        height: 300px;
+    }
+
+    /* Bento Grid - Tablet */
+    .stats-bento-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: var(--spacing-md);
+    }
+
+    .bento-box--features {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .bento-box--image {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .bento-box--quote {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+    }
+
+    .bento-box--counter:nth-of-type(4) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .bento-box--counter:nth-of-type(5) {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .section__title--large {
+        font-size: 48px;
+    }
+
+    .bento-quote__text {
+        font-size: 24px;
+    }
+
+    .bento-counter__number {
+        font-size: 56px;
+    }
+
+    .counter__suffix {
+        font-size: 56px;
+    }
+
+    /* About Content Section */
+    .about-content-section__grid {
+        gap: var(--spacing-2xl);
+    }
+
+    /* Footer */
+    .footer__content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .footer__column--about {
+        grid-column: 1 / -1;
+    }
+
+    /* Carousel Navigation */
+    .carousel__nav--prev {
+        left: -15px;
+    }
+
+    .carousel__nav--next {
+        right: -15px;
+    }
+
+    /* Testimonial Cards */
+    .testimonial-card {
+        flex: 0 0 calc(50% - var(--spacing-md));
+        margin-right: var(--spacing-lg);
+    }
+}
+
+/* ========================================
+   TABLET PORTRAIT (768px and below)
+   ======================================== */
+@media (max-width: 768px) {
+    /* Typography Adjustments */
+    :root {
+        --font-size-h1: 60px;
+        --font-size-h2: 38px;
+        --font-size-h3: 24px;
+        --font-size-h4: 20px;
+        --font-size-h5: 14px;
+        --font-size-body: 16px;
+        --spacing-3xl: 4rem;
+        --spacing-4xl: 5rem;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    /* Header */
+    .header__nav {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: 500px;
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .hero__title {
+        font-size: var(--font-size-h1);
+        letter-spacing: 1px;
+    }
+
+    /* Team Grid - 1 column, reset mosaic */
+    .team-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 380px;
+        gap: var(--spacing-md);
+    }
+
+    .team-card:nth-child(1),
+    .team-card:nth-child(2),
+    .team-card:nth-child(3),
+    .team-card:nth-child(4),
+    .team-card:nth-child(5) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    /* Services Grid - 1 column */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .service-card {
+        height: 320px;
+    }
+
+    /* Services Detailed Grid - 1 column */
+    .services-detailed-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    /* Partners Grid - 3 columns */
+    .partners-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-md);
+    }
+
+    /* Bento Grid - Mobile */
+    .stats-section {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .stats-bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: var(--spacing-md);
+    }
+
+    .bento-box--features,
+    .bento-box--image,
+    .bento-box--quote,
+    .bento-box--counter:nth-of-type(4),
+    .bento-box--counter:nth-of-type(5) {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .section__title--large {
+        font-size: 38px;
+    }
+
+    .bento-box--features {
+        padding: var(--spacing-xl);
+    }
+
+    .bento-box--image {
+        min-height: 250px;
+    }
+
+    .bento-box--quote {
+        padding: var(--spacing-2xl);
+        min-height: 200px;
+    }
+
+    .bento-quote__text {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .bento-box--counter {
+        padding: var(--spacing-xl);
+        min-height: 160px;
+    }
+
+    .bento-counter__number {
+        font-size: 52px;
+    }
+
+    .counter__suffix {
+        font-size: 52px;
+    }
+
+    .bento-counter__label {
+        font-size: 15px;
+    }
+
+    /* About Content Section */
+    .about-content-section__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-images-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image--large,
+    .about-image--small {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    /* Video Section */
+    .video-section__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .video-section__video {
+        grid-column: 1;
+        grid-row: auto;
+        order: 1;
+    }
+
+    .feature-card--top-left,
+    .feature-card--top-right,
+    .feature-card--bottom-left,
+    .feature-card--bottom-right {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .feature-card--top-left {
+        order: 0;
+    }
+
+    .feature-card--top-right {
+        order: 2;
+    }
+
+    .feature-card--bottom-left {
+        order: 3;
+    }
+
+    .feature-card--bottom-right {
+        order: 4;
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--spacing-3xl) 0 var(--spacing-md);
+    }
+
+    .footer__content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .footer__column--about {
+        grid-column: 1;
+    }
+
+    /* Carousel */
+    .carousel__nav {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .carousel__nav--prev {
+        left: 0;
+    }
+
+    .carousel__nav--next {
+        right: 0;
+    }
+
+    /* Testimonial Cards */
+    .testimonial-card {
+        flex: 0 0 calc(100% - var(--spacing-lg));
+        margin-right: var(--spacing-lg);
+    }
+
+    /* Buttons */
+    .btn--large {
+        padding: var(--spacing-sm) var(--spacing-xl);
+        font-size: 18px;
+    }
+
+    /* Counter Cards */
+    .counter-card {
+        padding: var(--spacing-xl);
+    }
+
+    .counter-card__number {
+        font-size: 56px;
+    }
+
+    .counter__suffix {
+        font-size: 56px;
+    }
+
+    /* Quote Card */
+    .quote-card {
+        padding: var(--spacing-2xl);
+        min-height: 250px;
+    }
+
+    .quote-card__text {
+        font-size: 24px;
+    }
+}
+
+/* ========================================
+   MOBILE LARGE (425px and below)
+   ======================================== */
+@media (max-width: 425px) {
+    /* Typography Adjustments */
+    :root {
+        --font-size-h1: 48px;
+        --font-size-h2: 32px;
+        --font-size-h3: 22px;
+        --font-size-h4: 18px;
+        --font-size-h5: 13px;
+        --font-size-body: 15px;
+        --spacing-2xl: 2.5rem;
+        --spacing-3xl: 3rem;
+        --spacing-4xl: 4rem;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: 400px;
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .hero__title {
+        font-size: var(--font-size-h1);
+    }
+
+    .hero__subtitle {
+        font-size: 15px;
+    }
+
+    .hero__reviews {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    .hero__cta-note {
+        font-size: 16px;
+        padding: 0.65rem 0.9rem;
+        max-width: 92%;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    /* Section Headers */
+    .section__header {
+        margin-bottom: var(--spacing-2xl);
+    }
+
+    .section__header--center {
+        margin-bottom: var(--spacing-2xl);
+    }
+
+    /* Partners Grid - 2 columns */
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Team Cards */
+    .team-card__image {
+        height: 300px;
+    }
+
+    .team-card__content {
+        padding: var(--spacing-md);
+    }
+
+    /* Service Cards */
+    .service-card__content {
+        padding: var(--spacing-md);
+    }
+
+    .service-detailed-card__content {
+        padding: var(--spacing-md);
+    }
+
+    /* Bento Grid - Small Mobile */
+    .section__title--large {
+        font-size: 32px;
+    }
+
+    .bento-box__text {
+        font-size: 14px;
+    }
+
+    .bento-box--features .features-list__item {
+        font-size: 13px;
+    }
+
+    .bento-counter__number {
+        font-size: 48px;
+    }
+
+    .counter__suffix {
+        font-size: 48px;
+    }
+
+    .bento-quote__text {
+        font-size: 18px;
+    }
+
+    /* Team Cards Mobile */
+    .team-card__content {
+        padding: var(--spacing-md);
+    }
+
+    .team-card__name {
+        font-size: 22px;
+    }
+
+    .team-card__specialty {
+        font-size: 15px;
+    }
+
+    /* Feature Cards */
+    .feature-card {
+        padding: var(--spacing-lg);
+    }
+
+    .feature-card__icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* Testimonial Cards */
+    .testimonial-card {
+        padding: var(--spacing-lg);
+    }
+
+    /* FAQ */
+    .faq-item__header {
+        padding: var(--spacing-md);
+    }
+
+    .faq-item__question {
+        font-size: 18px;
+    }
+
+    .faq-item__icon {
+        font-size: 28px;
+    }
+
+    .faq-item__content p {
+        padding: 0 var(--spacing-md) var(--spacing-md);
+    }
+
+    /* Footer */
+    .footer__social {
+        gap: var(--spacing-sm);
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Team Section Tagline */
+    .team-section__tagline p {
+        font-size: 18px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: 16px;
+    }
+
+    .btn--large {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: 16px;
+    }
+}
+
+/* ========================================
+   MOBILE SMALL (375px and below)
+   ======================================== */
+@media (max-width: 375px) {
+    /* Typography Adjustments */
+    :root {
+        --font-size-h1: 40px;
+        --font-size-h2: 28px;
+        --font-size-h3: 20px;
+        --font-size-body: 14px;
+        --spacing-xl: 2rem;
+        --spacing-2xl: 2rem;
+        --spacing-3xl: 2.5rem;
+        --spacing-4xl: 3rem;
+    }
+
+    /* Hero Section */
+    .hero__title {
+        font-size: 36px;
+    }
+
+    /* Counter Cards */
+    .counter-card__number {
+        font-size: 40px;
+    }
+
+    .counter__suffix {
+        font-size: 40px;
+    }
+
+    /* Quote Card */
+    .quote-card__text {
+        font-size: 18px;
+    }
+
+    /* Team Section Tagline */
+    .team-section__tagline p {
+        font-size: 16px;
+    }
+}
+
+/* ========================================
+   LANDSCAPE ORIENTATION (Mobile/Tablet)
+   ======================================== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero__title {
+        font-size: 48px;
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+    .header,
+    .mobile-menu,
+    .mobile-menu-toggle,
+    .carousel__nav,
+    .carousel__dots,
+    .footer__social,
+    .newsletter-form {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+}
+
+/* ========================================
+   HIGH RESOLUTION DISPLAYS
+   ======================================== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Optimize images and fonts for retina displays */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* ========================================
+   REDUCED MOTION (Accessibility)
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ========================================
+   DARK MODE PREFERENCE (Future Enhancement)
+   ======================================== */
+@media (prefers-color-scheme: dark) {
+    /* Dark mode styles can be added here in the future */
+}

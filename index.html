@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physio Therapy - Get Back to Your Best</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                   <img src="assets/images/logo.png" alt="logo">
+                </div>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#our-team" class="nav__link">About Us</a></li>
+                        <li class="nav__item"><a href="#what-we-offer" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="https://wa.me/919120121922?text=Hi" class="nav__link" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li><a href="index.html" class="mobile-menu__link">Home</a></li>
+                <li><a href="#our-team" class="mobile-menu__link">About Us</a></li>
+                <li><a href="#what-we-offer" class="mobile-menu__link">Services</a></li>
+                <li><a href="https://wa.me/919120121922?text=Hi" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero hero--home">
+            <div class="hero__overlay"></div>
+            <div class="hero__background">
+                <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/images/hero-bg.jpg" aria-hidden="true">
+                    <source src="assets/videos/hero-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">GET BACK TO<br>YOUR BEST.</h1>
+                    <p class="hero__subtitle">
+                        We believe in empowering you with the tools and support to reclaim your strength, mobility, and confidence—one session at a time.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="https://wa.me/919120121922?text=Hi" class="btn btn--primary btn--consultation btn--large" target="_blank" rel="noopener noreferrer">Book consultation</a>
+                        <p class="hero__cta-note">
+                            Access personalized expert care and recovery plans built around your goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section - Committed To Your Comeback -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <h2 class="section__title section__title--large">Less Pain, More Living</h2>
+                </div>
+
+                <div class="stats-bento-grid">
+                    <!-- Top Left: Features Box -->
+                    <div class="bento-box bento-box--features">
+                        <h5 class="bento-box__pretitle">WHY CHOOSE US</h5>
+                        <p class="bento-box__text">
+                            At Physio Therapy, we don't just treat symptoms—we rebuild lives. With personalized care plans, expert therapists, and cutting-edge techniques, we're with you every step of the way.
+                        </p>
+                        <ul class="features-list">
+                            <li class="features-list__item">
+                                <svg class="checkmark" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Evidence-Based Treatment Plans</span>
+                            </li>
+                            <li class="features-list__item">
+                                <svg class="checkmark" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Experienced & Certified Professionals</span>
+                            </li>
+                            <li class="features-list__item">
+                                <svg class="checkmark" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Holistic Approach to Wellness</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Top Center: Image -->
+                    <div class="bento-box bento-box--image bento-box--quote-style">
+                        <p class="bento-quote__text">
+                            EVERY MOVE FORWARD IS PROGRESS
+                        </p>
+                    </div>
+
+                    <!-- Right: Teal Quote Box (spans full height) -->
+                    <div class="bento-box bento-box--quote bento-box--image-style">
+                        <h5 class="bento-box__pretitle">how we work</h5>
+                        <img src="assets/images/roadmap.png" alt="Physiotherapy treatment">
+                    </div>
+
+                    <!-- Bottom Left: Counter 1 -->
+                    <div class="bento-box bento-box--counter">
+                        <div class="bento-counter__number">
+                            <span class="counter" data-target="1200">0</span>
+                            <span class="counter__suffix">+</span>
+                        </div>
+                        <p class="bento-counter__label">Sessions Delivered</p>
+                    </div>
+
+                    <!-- Bottom Center: Counter 2 -->
+                    <div class="bento-box bento-box--counter">
+                        <div class="bento-counter__number">
+                            <span class="counter" data-target="350">0</span>
+                            <span class="counter__suffix">+</span>
+                        </div>
+                        <p class="bento-counter__label">Patients Supported</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section - Your Recovery Partners -->
+        <section class="team-section" id="our-team">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <h5 class="section__pretitle">OUR TEAM</h5>
+                    <h2 class="section__title">Your Recovery Partners</h2>
+                    <p class="section__text">
+                        Meet the dedicated professionals who are committed to helping you heal, move, and thrive.
+                    </p>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Team Member 1 -->
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <img src="assets/images/abdul.jpeg" alt="Dr. A. Gavas (PT)">
+                        </div>
+                        <div class="team-card__content">
+                            <h3 class="team-card__name">Dr. A. Gavas (PT)</h3>
+                            <p class="team-card__specialty">MPT (Sports Medicine)<br>Chief Consultant Physiotherapy (Founder &amp; Director)</p>
+                        </div>
+                    </article>
+
+                    <!-- Team Member 2 -->
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <img src="assets/images/rizwan.jpeg" alt="Dr. S.R. Raza (PT)">
+                        </div>
+                        <div class="team-card__content">
+                            <h3 class="team-card__name">Dr. S.R. Raza (PT)</h3>
+                            <p class="team-card__specialty">MSc (Exercise &amp; Sports Medicine)<br>Senior Consultant Physiotherapy (Co Founder &amp; CEO)</p>
+                        </div>
+                    </article>
+
+                    <!-- Team Member 3 -->
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <img src="assets/images/vibhor.jpeg" alt="Dr. Vibhor K. Singh (PT)">
+                        </div>
+                        <div class="team-card__content">
+                            <h3 class="team-card__name">Dr. Vibhor K. Singh (PT)</h3>
+                            <p class="team-card__specialty">MPT (Sports Medicine)<br>Senior Consultant Physiotherapy (Co Founder &amp; Chief Managing Director)</p>
+                        </div>
+                    </article>
+
+                    <!-- Team Member 4 -->
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <img src="assets/images/haider.jpeg" alt="Dr. Iqbal Haider (PT)">
+                        </div>
+                        <div class="team-card__content">
+                            <h3 class="team-card__name">Dr. Iqbal Haider (PT)</h3>
+                            <p class="team-card__specialty">MPT (Sports Medicine)<br>Senior Treating Physiotherapy (Co Founder &amp; Head of Administration)</p>
+                        </div>
+                    </article>
+
+                    <!-- Team Member 5 -->
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <img src="assets/images/neeraj.jpeg" alt="Dr. Neeraj K. Mehta (PT)">
+                        </div>
+                        <div class="team-card__content">
+                            <h3 class="team-card__name">Dr. Neeraj K. Mehta (PT)</h3>
+                            <p class="team-card__specialty">MPT (Neurology)<br>Senior Treating Physiotherapy (Program Manager &amp; Chief Coordinator)</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section - Care That Meets You Where You Are -->
+        <section class="services-section" id="what-we-offer">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <h5 class="section__pretitle">WHAT WE OFFER</h5>
+                    <h2 class="section__title">Care That Meets You Where You Are</h2>
+                    <p class="section__text">
+                        From injury recovery to performance enhancement, we provide specialized treatments tailored to your unique needs.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="assets/images/service-1.jpg" alt="Sports Rehabilitation">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Sports Rehabilitation</h3>
+                            <p class="service-card__description">
+                                Targeted rehab programs to recover from sports injuries and safely return to peak performance.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="assets/images/service-2.jpg" alt="Prehab and Post Surgery Rehab">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Prehab and Post Surgery Rehab</h3>
+                            <p class="service-card__description">
+                                Build strength before surgery and restore mobility, function, and confidence after procedures.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="assets/images/service-3.jpg" alt="Injury Prevention">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Injury Prevention</h3>
+                            <p class="service-card__description">
+                                Movement screening and corrective plans to reduce injury risk in sport, work, and daily life.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Service 4 -->
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="assets/images/service-4.jpg" alt="MSK Conditions">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">MSK Conditions</h3>
+                            <p class="service-card__description">
+                                Evidence-based care for musculoskeletal pain, stiffness, and joint or soft tissue dysfunction.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Service 5 -->
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="assets/images/service-5.jpg" alt="Postural Correction">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Postural Correction</h3>
+                            <p class="service-card__description">
+                                Practical posture retraining to relieve strain, improve alignment, and support pain-free movement.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Service 6 -->
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="assets/images/service-6.jpg" alt="Neurological Conditions">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Neurological Conditions</h3>
+                            <p class="service-card__description">
+                                Personalized neuro-rehab for stroke, nerve injuries, and balance or coordination challenges.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Service 7 -->
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="assets/images/service-7.jpg" alt="Women Health">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Women Health</h3>
+                            <p class="service-card__description">
+                                Focused physiotherapy for pelvic health, prenatal and postnatal recovery, and core stability.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Service 8 -->
+                    <article class="service-card">
+                        <div class="service-card__image">
+                            <img src="assets/images/service-8.jpg" alt="Lifestyle Disease Management">
+                        </div>
+                        <div class="service-card__content">
+                            <h3 class="service-card__title">Lifestyle Disease Management</h3>
+                            <p class="service-card__description">
+                                Physiotherapy-led plans to improve mobility, fitness, and quality of life in chronic conditions.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <h5 class="section__pretitle">FAQ</h5>
+                    <h2 class="section__title">What You May Want To Know</h2>
+                    <p class="section__text">
+                        Common questions about our treatments, consultation process, and what to expect.
+                    </p>
+                </div>
+
+                <div class="faq-accordion" id="faqAccordion">
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">What makes your treatment better than other physiotherapy treatments?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>We provide treatment with a holistic approach, personalized plans, experienced therapists, advanced manual evidence-based practices, and patient-focused care.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">Which age groups can receive physiotherapy treatment?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>People of any age group can receive physiotherapy treatment. From children to the elderly, everyone can benefit from it.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">Do you treat the root cause of the problem?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Yes, our treatments focus on identifying and correcting the root cause, not just relieving symptoms.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">Is physiotherapy treatment painful?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Physiotherapy may cause mild discomfort at times, but it should never be excessively painful. Painful practices are not acceptable treatment standards.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">Do you follow evidence-based physiotherapy practices?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Yes, all our treatments are based on scientifically proven, evidence-based practices.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">How do I know if physiotherapy treatment is right for my condition?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Our expert physiotherapists assess your condition and recommend physiotherapy only if it suits your needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">Do you provide follow-up and post-treatment guidance?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Yes, we provide follow-up review consultations, home exercise guidance, and lifestyle guidance based on your body&rsquo;s needs for long-term recovery.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">What if I miss a physiotherapy session?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Missing a session may slow progress, but we adjust your treatment plan to keep your recovery on track.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">Do you provide home physiotherapy treatments?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Yes, we currently offer professional home physiotherapy treatment for patient convenience.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">Are the physiotherapists professionally qualified and respectful in their approach?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Yes, our physiotherapists maintain the highest standards of professionalism, care, and respect.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">How can I book an appointment?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>You can book an appointment by calling us or by booking online on our website.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">What will happen after booking the consultation?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>At your preferred time, an expert physiotherapist visits your home, assesses your condition, and then connects you with the consultant through a video call for consultation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">How will the consultation take place?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>The physiotherapist first performs your assessment, then connects you with the consultant on a tele-video call and presents your case. The consultant and patient then discuss concerns and solutions, and a treatment plan is prepared.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">What will be the consultation timing?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Consultation timing depends on your availability. We book the time slot when you are fully available, and the same applies to treatment sessions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">Will it be a problem if I don&rsquo;t have medical records like X-rays or MRI for consultation?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>No, consultation can still proceed. The consultant will advise if any investigation is required and guide you accordingly.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">What will be the typical duration of consultation or treatment?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>The duration depends on your condition and assessment. There is no fixed time duration.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">Do you provide treatment using machines?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>No, we primarily provide manual hands-on treatment and guide patients through appropriate exercises. In rare cases, depending on the condition, we may use machines.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-item__header" aria-expanded="false">
+                            <h3 class="faq-item__question">How long might it take to completely resolve my problem?</h3>
+                            <span class="faq-item__icon">+</span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>This depends on your condition. Some cases improve within 3-4 sessions, while others may take 3-4 months or longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--
+        Testimonials Section - What Our Patients Feel
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <h5 class="section__pretitle">TESTIMONIALS</h5>
+                    <h2 class="section__title">What Our Patients Feel</h2>
+                    <div class="testimonials__rating">
+                        <span class="rating__stars">★★★★★</span>
+                        <span class="rating__text">Based on 140k+ reviews</span>
+                    </div>
+                </div>
+
+                <div class="testimonials-carousel" id="testimonialsCarousel">
+                    <div class="testimonials-carousel__track">
+                        Testimonial 1
+                        <div class="testimonial-card">
+                            <p class="testimonial-card__quote">
+                                "After months of chronic back pain, I finally found relief here. The team is professional, caring, and truly invested in your recovery."
+                            </p>
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <h4 class="testimonial-card__name">Jennifer Thompson</h4>
+                            <p class="testimonial-card__title">Marketing Director</p>
+                        </div>
+
+                        Testimonial 2
+                        <div class="testimonial-card">
+                            <p class="testimonial-card__quote">
+                                "The personalized treatment plan helped me get back to running marathons. I couldn't have done it without their expertise and support."
+                            </p>
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <h4 class="testimonial-card__name">Mark Stevens</h4>
+                            <p class="testimonial-card__title">Professional Athlete</p>
+                        </div>
+
+                        Testimonial 3
+                        <div class="testimonial-card">
+                            <p class="testimonial-card__quote">
+                                "Excellent facility with state-of-the-art equipment. The therapists really know their stuff and make you feel comfortable throughout the process."
+                            </p>
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <h4 class="testimonial-card__name">Rachel Kim</h4>
+                            <p class="testimonial-card__title">Business Owner</p>
+                        </div>
+
+                        Testimonial 4
+                        <div class="testimonial-card">
+                            <p class="testimonial-card__quote">
+                                "I was skeptical at first, but the results speak for themselves. My mobility has improved dramatically, and I'm pain-free for the first time in years."
+                            </p>
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <h4 class="testimonial-card__name">Robert Garcia</h4>
+                            <p class="testimonial-card__title">Retired Teacher</p>
+                        </div>
+
+                        Testimonial 5
+                        <div class="testimonial-card">
+                            <p class="testimonial-card__quote">
+                                "From the initial assessment to ongoing treatment, every step was handled with professionalism and care. Highly recommend!"
+                            </p>
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <h4 class="testimonial-card__name">Amanda Foster</h4>
+                            <p class="testimonial-card__title">Software Engineer</p>
+                        </div>
+
+                        Testimonial 6
+                        <div class="testimonial-card">
+                            <p class="testimonial-card__quote">
+                                "Best decision I made for my health. The holistic approach and cutting-edge techniques made all the difference in my recovery journey."
+                            </p>
+                            <div class="testimonial-card__rating">★★★★★</div>
+                            <h4 class="testimonial-card__name">Daniel Brown</h4>
+                            <p class="testimonial-card__title">Construction Manager</p>
+                        </div>
+                    </div>
+
+                    Carousel Controls
+                    <button class="carousel__nav carousel__nav--prev" aria-label="Previous testimonial">‹</button>
+                    <button class="carousel__nav carousel__nav--next" aria-label="Next testimonial">›</button>
+
+                    Carousel Dots
+                    <div class="carousel__dots" id="carouselDots"></div>
+                </div>
+            </div>
+        </section>
+        -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <!-- About Column -->
+                <div class="footer__column footer__column--about">
+                    <h3 class="footer__logo">PHYSIO THERAPY</h3>
+                    <p class="footer__text">
+                        Dedicated to helping you achieve optimal health and wellness through personalized physiotherapy care.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer__column">
+                    <h4 class="footer__heading">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="index.html#our-team" class="footer__link">About Us</a></li>
+                        <li><a href="index.html#what-we-offer" class="footer__link">What We Offer</a></li>
+                        <li><a href="https://wa.me/919120121922?text=Hi" class="footer__link" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer__column footer__column--newsletter">
+                    <h4 class="footer__heading">Need Expert Guidance?</h4>
+                    <p class="footer__text">Start your recovery with a quick consultation from our team.</p>
+                    <a href="https://wa.me/919120121922?text=Hi" class="btn btn--primary btn--consultation" target="_blank" rel="noopener noreferrer">Book Consultation</a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2024 Physio Therapy. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/accordion.js"></script>
+</body>
+</html>

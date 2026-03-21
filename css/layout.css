@@ -1,0 +1,448 @@
+/* ========================================
+   LAYOUT.CSS - Containers, Grids, Section Layouts
+   ======================================== */
+
+/* ========================================
+   CONTAINER
+   ======================================== */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+/* ========================================
+   GRID SYSTEMS
+   ======================================== */
+
+/* Team Grid - Mosaic/Masonry Pattern */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 400px;
+    gap: var(--spacing-lg);
+}
+
+/* Mosaic Pattern - 5 Members */
+.team-card:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.team-card:nth-child(2) {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+.team-card:nth-child(3) {
+    grid-column: 5 / 7;
+    grid-row: 1 / 2;
+}
+
+.team-card:nth-child(4) {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+.team-card:nth-child(5) {
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+}
+
+/* Services Grid - 4 columns (2x4) on desktop */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+}
+
+/* Services Detailed Grid - 2 columns on desktop */
+.services-detailed-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-2xl);
+}
+
+/* Partners Grid - 6 columns on desktop */
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--spacing-xl);
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-4xl) 0;
+    overflow: hidden;
+}
+
+.hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 1;
+}
+
+.hero__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-bg);
+    background-image: url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.hero__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.45);
+}
+
+.hero--home .hero__overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.62) 100%);
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero__title {
+    font-size: var(--font-size-h1);
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--spacing-lg);
+    color: var(--white);
+}
+
+.hero__subtitle {
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-loose);
+    max-width: 700px;
+    margin: 0 auto var(--spacing-xl);
+    opacity: 0.95;
+}
+
+.hero__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.hero__cta-note {
+    margin: var(--spacing-xs) auto var(--spacing-sm);
+    max-width: 760px;
+    padding: 0.75rem 1.25rem;
+    display: inline-block;
+    background-color: rgba(8, 118, 105, 0.32);
+    border: 1px solid rgba(8, 118, 105, 0.55);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-loose);
+    opacity: 1;
+    color: var(--white);
+    text-align: center;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+.hero__reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+    font-size: var(--font-size-small);
+}
+
+.reviews__stars {
+    color: #FFD700;
+    font-size: 20px;
+}
+
+.reviews__text {
+    opacity: 0.9;
+}
+
+/* ========================================
+   STATS SECTION - BENTO GRID LAYOUT
+   ======================================== */
+.stats-section {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--white);
+}
+
+.section__title--large {
+    font-size: 56px;
+    margin-bottom: var(--spacing-3xl);
+}
+
+/* Bento Grid - Mosaic Layout */
+.stats-bento-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: var(--spacing-lg);
+}
+
+/* Grid positioning for mosaic effect */
+.bento-box--features {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.bento-box--image {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.bento-box--quote {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3; /* Spans both rows */
+}
+
+.bento-box--counter:nth-of-type(4) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.bento-box--counter:nth-of-type(5) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* ========================================
+   TEAM SECTION
+   ======================================== */
+.team-section {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--light-gray);
+}
+
+.team-section__tagline {
+    margin-top: var(--spacing-3xl);
+    text-align: center;
+}
+
+.team-section__tagline p {
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--primary-teal);
+}
+
+/* ========================================
+   SERVICES SECTION
+   ======================================== */
+.services-section {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--white);
+}
+
+.services-detailed-section {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--white);
+}
+
+/* ========================================
+   TESTIMONIALS SECTION
+   ======================================== */
+.testimonials-section {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--light-teal-bg);
+}
+
+.testimonials__rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.rating__stars {
+    color: #FFD700;
+    font-size: 24px;
+}
+
+.rating__text {
+    font-size: var(--font-size-body);
+    color: var(--primary-text);
+    opacity: 0.8;
+}
+
+/* ========================================
+   PARTNERS SECTION
+   ======================================== */
+.partners-section {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--white);
+}
+
+/* ========================================
+   ABOUT PAGE SECTIONS
+   ======================================== */
+.about-content-section {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--white);
+}
+
+.about-content-section__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.about-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.about-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.about-image--large {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.about-image--small {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--light-gray);
+    min-height: 300px;
+}
+
+/* ========================================
+   VIDEO SECTION
+   ======================================== */
+.video-section {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--light-teal-bg);
+}
+
+.video-section__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-section__video {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    background-color: var(--dark-bg);
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-card--top-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.feature-card--top-right {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.feature-card--bottom-left {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.feature-card--bottom-right {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+/* ========================================
+   FAQ SECTION
+   ======================================== */
+.faq-section {
+    padding: var(--spacing-4xl) 0;
+    background-color: var(--light-gray);
+}
+
+.faq-accordion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+    padding: var(--spacing-4xl) 0 var(--spacing-lg);
+    background-color: var(--dark-bg);
+    color: var(--white);
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: var(--spacing-3xl);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.footer__bottom {
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer__copyright {
+    font-size: var(--font-size-small);
+    opacity: 0.7;
+    margin: 0;
+}

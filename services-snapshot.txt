@@ -1,0 +1,83 @@
+uid=4_0 RootWebArea "Our Services" url="https://ccreadysites.cyberchimps.com/physiotherapy/our-services/"
+  uid=4_1 link "↓ Skip to Main Content" url="https://ccreadysites.cyberchimps.com/physiotherapy/our-services/#primary"
+    uid=4_2 StaticText "↓ Skip to Main Content"
+  uid=4_3 banner
+    uid=4_4 link url="https://ccreadysites.cyberchimps.com/physiotherapy/"
+    uid=4_5 navigation "Main Menu"
+      uid=4_6 StaticText "Main Navigation"
+      uid=4_7 link "Home" url="https://ccreadysites.cyberchimps.com/physiotherapy/"
+        uid=4_8 StaticText "Home"
+      uid=4_9 link "About Us" url="https://ccreadysites.cyberchimps.com/physiotherapy/about-us/"
+        uid=4_10 StaticText "About Us"
+      uid=4_11 link "Services" expandable haspopup="menu" url="https://ccreadysites.cyberchimps.com/physiotherapy/our-services/"
+        uid=4_12 StaticText "Services"
+      uid=4_13 link "Service Details" url="https://ccreadysites.cyberchimps.com/physiotherapy/service-details/"
+        uid=4_14 StaticText "Service Details"
+      uid=4_15 link "Contact Us" url="https://ccreadysites.cyberchimps.com/physiotherapy/contact-us/"
+        uid=4_16 StaticText "Contact Us"
+  uid=4_17 heading "Where Healing Takes Shape" level="1"
+  uid=4_18 heading "Back Adjustment" level="3"
+  uid=4_19 StaticText "A targeted manual therapy that restores alignment, relieves tension, and improves overall spinal mobility. Designed to ease chronic pain and help your body move naturally again."
+  uid=4_20 heading "Corrective Exercise" level="3"
+  uid=4_21 StaticText "Customized movement programs that retrain your body, fix posture imbalances, and strengthen weak areas. Each exercise is built to enhance stability, improve function, and support long-term recovery."
+  uid=4_22 heading "Muscle Injury" level="3"
+  uid=4_23 StaticText "Focused rehabilitation that reduces pain, restores muscle strength, and speeds up healing. From strains to tears, we help you recover safely and return to your routine with confidence."
+  uid=4_24 heading "Accupuncture" level="3"
+  uid=4_25 StaticText "A precise healing technique that stimulates key points, eases tension, and enhances natural circulation. Designed to reduce pain, restore balance, and support your body’s internal recovery pathways."
+  uid=4_26 heading "Bone Injury" level="3"
+  uid=4_27 StaticText "A structured recovery process that strengthens stability, restores movement, and accelerates safe healing. Designed to manage pain, rebuild function, and help your body return to everyday activity confidently."
+  uid=4_28 heading "Joint Mobilization" level="3"
+  uid=4_29 StaticText "A gentle manual technique that increases flexibility, reduces stiffness, and improves smooth joint function. Designed to relieve discomfort and help your body move freely and efficiently again."
+  uid=4_30 heading "Postural Correction" level="3"
+  uid=4_31 StaticText "A focused alignment approach that retrains posture, reduces strain, and supports balanced body mechanics. Designed to ease daily tension and help your body maintain healthier movement patterns naturally."
+  uid=4_32 heading "Committed To Your Comeback" level="2"
+  uid=4_33 StaticText "Years Of Excellence"
+  uid=4_34 StaticText "0"
+  uid=4_35 StaticText "+"
+  uid=4_36 StaticText "Musculoskeletal Injuries"
+  uid=4_37 StaticText "Professional Staff"
+  uid=4_38 StaticText "Guarantee Treatment"
+  uid=4_39 StaticText "Affordable Price & Plan"
+  uid=4_40 StaticText "Therapy Session Completed"
+  uid=4_41 StaticText "0"
+  uid=4_42 StaticText "+"
+  uid=4_43 heading "EVERY MOVE FORWARD IS PROGRESS" level="5"
+  uid=4_44 heading "What You May Want To Know" level="2"
+  uid=4_45 button "How many sessions will I need?" expandable
+    uid=4_46 generic
+  uid=4_47 button "Do I need a doctor’s referral to start physiotherapy?" expandable
+    uid=4_48 generic
+  uid=4_49 button "What should I bring to my first appointment?" expandable
+    uid=4_50 generic
+  uid=4_51 button "Will the treatment be painful?" expandable
+    uid=4_52 generic
+  uid=4_53 button "How soon will I start seeing results?" expandable
+    uid=4_54 generic
+  uid=4_55 button "Do you offer home exercise programs?" expandable
+    uid=4_56 generic
+  uid=4_57 button "Can physiotherapy help chronic pain?" expandable
+    uid=4_58 generic
+  uid=4_59 heading "Partners & Associations" level="2"
+  uid=4_60 StaticText "Meet our dedicated and skilled Partners and Associates delivering exceptional and personalized services."
+  uid=4_61 contentinfo
+    uid=4_62 StaticText "A modern physiotherapy centre dedicated to restoring movement, relieving pain, and helping you live stronger with expert, personalised care."
+    uid=4_63 heading "Links" level="2"
+    uid=4_64 StaticText "Home"
+    uid=4_65 StaticText "About Us"
+    uid=4_66 StaticText "Services"
+    uid=4_67 StaticText "Contact Us"
+    uid=4_68 heading "Services" level="2"
+    uid=4_69 StaticText "Back Adjustment"
+    uid=4_70 StaticText "Corrective Exercise"
+    uid=4_71 StaticText "Muscle Injury"
+    uid=4_72 StaticText "Accupuncture"
+    uid=4_73 heading "Newsletter" level="2"
+    uid=4_74 StaticText "Email "
+    uid=4_75 StaticText "*"
+    uid=4_76 textbox "Email *" required
+    uid=4_77 button "Submit" live="assertive" relevant="additions text"
+    uid=4_78 StaticText "Copyright © 2026 "
+    uid=4_79 StaticText "| Powered by "
+    uid=4_80 link "Responsive Theme" url="https://cyberchimps.com/"
+      uid=4_81 StaticText "Responsive Theme"
+  uid=4_82 StaticText "desktop"
