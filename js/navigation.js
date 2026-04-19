@@ -137,11 +137,17 @@
                 }
             });
 
+            // Keep the default active state when no section is in view yet.
+            if (!current) {
+                return;
+            }
+
             navLinks.forEach(function(link) {
                 link.classList.remove('active');
                 const href = link.getAttribute('href');
+                const hash = href && href.includes('#') ? href.split('#')[1] : '';
 
-                if (href && href.includes('#' + current)) {
+                if (hash === current) {
                     link.classList.add('active');
                 }
             });
